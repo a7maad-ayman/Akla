@@ -140,6 +140,7 @@
 			buildConfigurationList = 27D9E1EF2A120E200000874B /* Build configuration list for PBXNativeTarget "Akla" */;
 			buildPhases = (
 				27D9E1F92A13BF0A0000874B /* SwiftGen */,
+				27D9E21F2A13D9B70000874B /* SwiftLint */,
 				27D9E1C12A120E1E0000874B /* Sources */,
 				27D9E1C22A120E1E0000874B /* Frameworks */,
 				27D9E1C32A120E1E0000874B /* Resources */,
@@ -275,7 +276,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftgen\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#swiftgen\n";
+		};
+		27D9E21F2A13D9B70000874B /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --fix\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
