@@ -15,6 +15,7 @@
 		27D9E1EA2A120E200000874B /* AklaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E1E92A120E200000874B /* AklaUITests.swift */; };
 		27D9E1EC2A120E200000874B /* AklaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E1EB2A120E200000874B /* AklaUITestsLaunchTests.swift */; };
 		27D9E21E2A13D4240000874B /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E21D2A13D4240000874B /* Assets.swift */; };
+		27D9E2222A14AABB0000874B /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 27D9E2212A14AABB0000874B /* Factory */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D9E2222A14AABB0000874B /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +152,9 @@
 			dependencies = (
 			);
 			name = Akla;
+			packageProductDependencies = (
+				27D9E2212A14AABB0000874B /* Factory */,
+			);
 			productName = Akla;
 			productReference = 27D9E1C52A120E1E0000874B /* Akla.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +227,9 @@
 				Base,
 			);
 			mainGroup = 27D9E1BC2A120E1D0000874B;
+			packageReferences = (
+				27D9E2202A14AABB0000874B /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			productRefGroup = 27D9E1C62A120E1E0000874B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -639,6 +647,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		27D9E2202A14AABB0000874B /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27D9E2212A14AABB0000874B /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27D9E2202A14AABB0000874B /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 27D9E1BD2A120E1D0000874B /* Project object */;
 }
