@@ -1,0 +1,5 @@
+xcassets:
+  inputs: Akla/Resources
+  outputs:
+    templateName: swift5
+    output: Assets.swift
