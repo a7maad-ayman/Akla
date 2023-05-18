@@ -16,6 +16,7 @@
 		27D9E1EC2A120E200000874B /* AklaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E1EB2A120E200000874B /* AklaUITestsLaunchTests.swift */; };
 		27D9E21E2A13D4240000874B /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E21D2A13D4240000874B /* Assets.swift */; };
 		27D9E2222A14AABB0000874B /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 27D9E2212A14AABB0000874B /* Factory */; };
+		27D9E22D2A16211C0000874B /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E22C2A16211C0000874B /* UILabel+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		27D9E1E92A120E200000874B /* AklaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AklaUITests.swift; sourceTree = "<group>"; };
 		27D9E1EB2A120E200000874B /* AklaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AklaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		27D9E21D2A13D4240000874B /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = SOURCE_ROOT; };
+		27D9E22C2A16211C0000874B /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		27D9E1C72A120E1E0000874B /* Akla */ = {
 			isa = PBXGroup;
 			children = (
+				27D9E22B2A1620F60000874B /* Extensions */,
 				27D9E1F82A1211030000874B /* Resources */,
 				27D9E1C82A120E1E0000874B /* AppDelegate.swift */,
 				27D9E1CA2A120E1E0000874B /* SceneDelegate.swift */,
@@ -132,6 +135,14 @@
 				27D9E1D32A120E1F0000874B /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		27D9E22B2A1620F60000874B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27D9E22C2A16211C0000874B /* UILabel+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D9E22D2A16211C0000874B /* UILabel+Extension.swift in Sources */,
 				27D9E1C92A120E1E0000874B /* AppDelegate.swift in Sources */,
 				27D9E1CB2A120E1E0000874B /* SceneDelegate.swift in Sources */,
 				27D9E21E2A13D4240000874B /* Assets.swift in Sources */,
