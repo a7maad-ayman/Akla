@@ -12,8 +12,37 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let _ = (scene as? UIWindowScene) else { return }
+
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        window?.windowScene = windowScene
+        window?.rootViewController = createTabBar()
+        window?.makeKeyAndVisible()
+
     }
+    
+
+    //MARK: - Function to create the root tabBar
+    func createTabBar() -> UITabBarController {
+
+        let tabBar = UITabBarController()
+        UITabBar.appearance().tintColor = .systemGreen
+        UITabBar.appearance().backgroundColor = .systemGray6
+        tabBar.viewControllers = [createHomeNC()]
+
+        return tabBar
+    }
+    
+
+    //MARK: - Function to Embed in NavigationController in a ViewController
+    func createHomeNC() -> UINavigationController {
+        let homeVC = HomeViewController()
+        homeVC.title = "Home"
+        homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), tag: 0)
+
+        return UINavigationController(rootViewController: homeVC)
+    }
+    
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
