@@ -1,5 +1,18 @@
+input_dir: Akla/
+output_dir: Akla/
+
 xcassets:
-  inputs: Akla/Resources
+  - inputs:
+      - Resources/
+    outputs:
+      - templatePath: SwiftGen-Templates/images.stencil
+        output: Classes/Generated/UIImage.Generated.swift
+
+
+strings:
+  inputs:
+    - Resources/Localization/Localizable.strings
   outputs:
-    templateName: swift5
-    output: Assets.swift
+    - templateName: structured-swift5
+      output: Classes/Generated/Strings+Generated.swift
+
