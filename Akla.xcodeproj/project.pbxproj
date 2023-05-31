@@ -18,7 +18,11 @@
 		27D9E1EA2A120E200000874B /* AklaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E1E92A120E200000874B /* AklaUITests.swift */; };
 		27D9E1EC2A120E200000874B /* AklaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E1EB2A120E200000874B /* AklaUITestsLaunchTests.swift */; };
 		27D9E2222A14AABB0000874B /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 27D9E2212A14AABB0000874B /* Factory */; };
+		27D9E22D2A16211C0000874B /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E22C2A16211C0000874B /* UILabel+Extension.swift */; };
+		27D9E22F2A16367D0000874B /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E22E2A16367D0000874B /* UIButton+Extension.swift */; };
+
 		27E6E9E02A19835E00D3B141 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27E6E9DF2A19835E00D3B141 /* Localizable.strings */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +57,12 @@
 		27D9E1E52A120E200000874B /* AklaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AklaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D9E1E92A120E200000874B /* AklaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AklaUITests.swift; sourceTree = "<group>"; };
 		27D9E1EB2A120E200000874B /* AklaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AklaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		27D9E21D2A13D4240000874B /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = SOURCE_ROOT; };
+		27D9E22C2A16211C0000874B /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		27D9E22E2A16367D0000874B /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+
 		27E6E9DF2A19835E00D3B141 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +122,11 @@
 		27D9E1C72A120E1E0000874B /* Akla */ = {
 			isa = PBXGroup;
 			children = (
+
+				27D9E22B2A1620F60000874B /* Extensions */,
+
 				27E6E9D72A1981ED00D3B141 /* Classes */,
+
 				27D9E1F82A1211030000874B /* Resources */,
 			);
 			path = Akla;
@@ -147,6 +160,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		27D9E22B2A1620F60000874B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27D9E22C2A16211C0000874B /* UILabel+Extension.swift */,
+				27D9E22E2A16367D0000874B /* UIButton+Extension.swift */,
+
 		27E6E9D72A1981ED00D3B141 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +230,7 @@
 		27E6E9DE2A1982C500D3B141 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -395,11 +415,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D9E22D2A16211C0000874B /* UILabel+Extension.swift in Sources */,
 				27D9E1C92A120E1E0000874B /* AppDelegate.swift in Sources */,
 				275243C92A1D7AB90016105B /* UIImage.Generated.swift in Sources */,
 				27D9E1CB2A120E1E0000874B /* SceneDelegate.swift in Sources */,
+				27D9E22F2A16367D0000874B /* UIButton+Extension.swift in Sources */,
+				27D9E21E2A13D4240000874B /* Assets.swift in Sources */,
 				275243C82A1D7AB90016105B /* Strings+Generated.swift in Sources */,
 				278EF7672A1774A500757C5D /* HomeViewController.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
